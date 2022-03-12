@@ -1,0 +1,193 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: lato, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    color: black;
+}
+h1 {
+    font-size: 120px;
+}
+h2 {
+    font-size: 80px;
+    color:rgb(164, 36, 196)
+}
+h3 {
+    font-size: 33px;
+}
+h4 {
+    font-size: 28px;
+}
+h1, h2, h3, h4, h5 {
+    text-transform: capitalize;
+    margin: 0px 0px 10px;
+}
+h5 {
+    font-size: 20px;
+    margin: 12px 0 -10px;
+}
+p {
+    color: rgb(126, 126, 126);
+    font-size: 18px;
+    line-height: 30px;
+}
+button{
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 10px;
+    border: 0px;
+}
+img {
+    height: 35px;
+    padding: 30px;
+    border-radius: 50%;
+
+}
+#skews {
+    overflow: hidden;
+    margin-bottom: -700px;
+    height: 800px;
+}
+#purple {
+    width: 2500px;
+    height: 1000px;
+    background: rgb(90, 0, 150);
+    background: linear-gradient(-10deg, rgba(28,2,91, 0) 30%, rgb(65,7,176) 60%),
+                linear-gradient(-80deg, rgb(26, 4, 78) 0%, rgb(90, 0, 150) 25%);
+    transform: matrix(-0.9659258, 0.258819, 0.64278760, 0.7660444, -150, -450);
+    border-radius: 200px;
+}
+#orange {
+    width: 1000px;
+    height: 750px;
+    background: rgb(249,149,9);
+    background: linear-gradient(-10deg, rgb(249,149,9) 0%, rgba(65,7,176,0) 60%);
+    transform: matrix(-0.9659258, 0.258819, 0.64278760, 0.7660444, 850, -1400);
+    border-radius: 50px;
+}
+#pink {
+    width: 750px;
+    height: 500px;
+    background: rgb(235, 111, 224);
+    background: linear-gradient(170deg, rgba(161, 7, 250, 0.33) 50%, rgba(245, 152, 245, 0.27) 100%);
+    transform: matrix(-0.9659258, 0.258819, 0.64278760, 0.7660444, 925, -2125);
+    box-shadow: 50px 150px 150px rgba(230, 0, 161, 0.3);
+    border-radius: 50px;
+}
+#red {
+    width: 500px;
+    height: 1000px;
+    background: rgb(255, 83, 83);
+    background: linear-gradient(-10deg, rgba(218, 31, 118, 0.4) 0%, rgba(77, 12, 161, 0.4) 50%);
+    transform: matrix(-0.9659258, 0.258819, 0.64278760, 0.7660444, 1170, -2700);
+    border-radius: 50px;
+}
+#intro {
+    position: relative;
+    z-index: 1;
+    color: white;
+    margin: 0px 0px 100px 250px;
+    width: 800px;
+}
+#intro div {
+    padding: 40px;
+    font-size: 35px;
+    background: white;
+    border-radius: 50%;
+    float: right;
+    color: black;
+    position: relative;
+    top: -50px;
+    border: 20px solid transparent;
+    border: 20px solid rgba(190, 164, 252, 0.2);
+    background-clip: padding-box;
+    margin-left: 100px;
+    box-shadow: 0px 5px 50px black;
+    box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.3);
+}
+#intro button {
+    margin-top: 20px;
+    background:rgb(164, 61, 196);
+    background: linear-gradient(90deg, rgb(208, 84, 219) 0%, rgb(160, 55, 221) 60%);
+    font-size: 14px;
+    padding: 16px 27px;
+    border-radius: 30px;
+}
+#intro button a, #intro button a:visited {
+    color: white;
+}
+#normal {
+    margin: 365px auto 70px;
+    width: 800px;
+    text-align: center;
+}
+#videos {
+    display: grid;
+    grid-template-columns: auto 60% auto;
+}
+#videos button, #videos iframe, #last, img{
+    box-shadow: 0px 0px 50px rgb(233, 237, 255);
+}
+#videos button {
+    background: white;
+    width: 75%;
+    margin: 10px auto;
+    text-align: left;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+#videos span {
+    margin: 10px 0;
+}
+#videos button span {
+    padding: 4px;
+    padding-left: 3px;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    border-radius: 50%;
+    margin: 0 8px;
+    transition: 0.2s;
+}
+#videos iframe {
+    width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    grid-column-start: 2;
+    border-radius: 10px;
+}
+#videos button:hover, #videos button:focus {
+    width: 80%;
+    outline: none;
+}
+#videos button:hover span, #videos button:focus span {
+    border-color:rgb(87, 221, 255);
+    color: rgb(87, 221, 255);
+}
+#of {
+    text-transform: lowercase;
+}
+#last {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 250px 150px 100px;
+    border-radius: 10px;
+}
+#last h4 {
+    flex-basis: 100%;
+    margin: 70px 0 50px;
+}
+#last div {
+    width: 300px;
+    flex-grow: 1;
+    margin: 0 20px 30px;
+    min-height: 200px;
+    min-width: 150px;
+}
